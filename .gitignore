@@ -64,3 +64,5 @@ pnpm-debug.log*
 # Models cache & large datasets (keep reproducible script and small sample models)
 ml/data/raw/*.zip
 ml/data/raw/*.tar.gz
+*.db
+*.sqlite3

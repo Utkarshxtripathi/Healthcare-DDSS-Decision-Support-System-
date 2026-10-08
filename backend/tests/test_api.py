@@ -137,3 +137,25 @@ def test_explain_endpoint():
     assert len(data["all_contributions"]) == 17
     assert data["lime_comparison"] is not None
     assert "surrogate_fidelity_r2" in data["lime_comparison"]
+
+
+def test_database_models_initialization():
+    from backend.app.db.session import init_db, SessionLocal
+    from backend.app.db.models import PatientRecord, AssessmentRecord, PredictionRecord
+
+    init_db()
+    db = SessionLocal()
+    try:
+        patient = PatientRecord(
+            synthetic_patient_id="SYN-TEST-DB-001",
+            age=55,
+            sex=1,
+        )
+        db.add(patient)
+        db.commit()
+        db.refresh(patient)
+        assert patient.id is not None
+        assert patient.synthetic_patient_id == "SYN-TEST-DB-001"
+    finally:
+        db.close()
+
