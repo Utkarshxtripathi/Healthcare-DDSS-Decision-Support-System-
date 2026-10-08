@@ -1,0 +1,121 @@
+[
+  {
+    "feature": "troponin_level",
+    "label": "Cardiac Troponin",
+    "category": "Cardiac Biomarkers",
+    "unit": "ng/mL",
+    "mean_absolute_shap": 1.2995
+  },
+  {
+    "feature": "age",
+    "label": "Age",
+    "category": "Demographics",
+    "unit": "years",
+    "mean_absolute_shap": 1.0679
+  },
+  {
+    "feature": "systolic_bp",
+    "label": "Systolic Blood Pressure",
+    "category": "Vital Signs",
+    "unit": "mmHg",
+    "mean_absolute_shap": 1.0062
+  },
+  {
+    "feature": "smoking_status",
+    "label": "Smoking Status",
+    "category": "Lifestyle",
+    "unit": "0=No, 1=Yes",
+    "mean_absolute_shap": 0.9747
+  },
+  {
+    "feature": "history_hypertension",
+    "label": "Hypertension History",
+    "category": "Medical History",
+    "unit": "0=No, 1=Yes",
+    "mean_absolute_shap": 0.758
+  },
+  {
+    "feature": "blood_glucose",
+    "label": "Blood Glucose",
+    "category": "Metabolic",
+    "unit": "mg/dL",
+    "mean_absolute_shap": 0.6105
+  },
+  {
+    "feature": "history_diabetes",
+    "label": "Diabetes History",
+    "category": "Medical History",
+    "unit": "0=No, 1=Yes",
+    "mean_absolute_shap": 0.5129
+  },
+  {
+    "feature": "creatinine",
+    "label": "Serum Creatinine",
+    "category": "Renal",
+    "unit": "mg/dL",
+    "mean_absolute_shap": 0.3441
+  },
+  {
+    "feature": "bmi",
+    "label": "Body Mass Index (BMI)",
+    "category": "Metabolic",
+    "unit": "kg/m\u00b2",
+    "mean_absolute_shap": 0.2704
+  },
+  {
+    "feature": "heart_rate",
+    "label": "Heart Rate",
+    "category": "Vital Signs",
+    "unit": "bpm",
+    "mean_absolute_shap": 0.2533
+  },
+  {
+    "feature": "crp",
+    "label": "C-Reactive Protein (CRP)",
+    "category": "Inflammatory",
+    "unit": "mg/L",
+    "mean_absolute_shap": 0.2131
+  },
+  {
+    "feature": "spo2",
+    "label": "Oxygen Saturation (SpO2)",
+    "category": "Vital Signs",
+    "unit": "%",
+    "mean_absolute_shap": 0.2029
+  },
+  {
+    "feature": "respiratory_rate",
+    "label": "Respiratory Rate",
+    "category": "Vital Signs",
+    "unit": "breaths/min",
+    "mean_absolute_shap": 0.1617
+  },
+  {
+    "feature": "cholesterol_total",
+    "label": "Total Cholesterol",
+    "category": "Metabolic",
+    "unit": "mg/dL",
+    "mean_absolute_shap": 0.1409
+  },
+  {
+    "feature": "sex",
+    "label": "Biological Sex",
+    "category": "Demographics",
+    "unit": "0=F, 1=M",
+    "mean_absolute_shap": 0.0626
+  },
+  {
+    "feature": "body_temperature",
+    "label": "Body Temperature",
+    "category": "Vital Signs",
+    "unit": "\u00b0C",
+    "mean_absolute_shap": 0.0488
+  },
+  {
+    "feature": "diastolic_bp",
+    "label": "Diastolic Blood Pressure",
+    "category": "Vital Signs",
+    "unit": "mmHg",
+    "mean_absolute_shap": 0.0433
+  }
+]
