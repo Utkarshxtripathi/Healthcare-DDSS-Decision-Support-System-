@@ -1,0 +1,62 @@
+{
+  "timestamp": "2026-10-08T19:30:00Z",
+  "random_forest_baseline": {
+    "metrics": {
+      "accuracy": 0.9553,
+      "balanced_accuracy": 0.9647,
+      "sensitivity_recall": 0.9806,
+      "specificity": 0.9487,
+      "precision": 0.8329,
+      "f1_score": 0.9007,
+      "roc_auc": 0.9953,
+      "pr_auc": 0.9824,
+      "brier_score": 0.0416
+    },
+    "confusion_matrix": {
+      "true_negative": 1129,
+      "false_positive": 61,
+      "false_negative": 6,
+      "true_positive": 304
+    }
+  },
+  "xgboost_candidate": {
+    "metrics": {
+      "accuracy": 0.9713,
+      "balanced_accuracy": 0.976,
+      "sensitivity_recall": 0.9839,
+      "specificity": 0.9681,
+      "precision": 0.8892,
+      "f1_score": 0.9342,
+      "roc_auc": 0.9982,
+      "pr_auc": 0.9938,
+      "brier_score": 0.0234
+    },
+    "confusion_matrix": {
+      "true_negative": 1152,
+      "false_positive": 38,
+      "false_negative": 5,
+      "true_positive": 305
+    }
+  },
+  "selected_model": "xgboost_candidate",
+  "selection_rationale": "XGBoost demonstrated superior ROC-AUC, PR-AUC, and clinical sensitivity while providing native compatibility with TreeSHAP for fast, exact feature attribution.",
+  "feature_names": [
+    "age",
+    "heart_rate",
+    "systolic_bp",
+    "diastolic_bp",
+    "body_temperature",
+    "spo2",
+    "respiratory_rate",
+    "bmi",
+    "blood_glucose",
+    "cholesterol_total",
+    "troponin_level",
+    "crp",
+    "creatinine",
+    "sex",
+    "history_hypertension",
+    "history_diabetes",
+    "smoking_status"
+  ]
+}
